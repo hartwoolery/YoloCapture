@@ -1,0 +1,17 @@
+# --- runtime dependencies ---------------------------------
+fastapi==0.111.0          # the web framework
+uvicorn[standard]==0.29.0 # ASGI server; [standard] adds useful extras (h11, httptools, websockets…)
+pydantic==2.7.1           # FastAPI’s data‑validation backbone
+python-multipart==0.0.9   # only needed if you ever switch to multipart/file uploads, but harmless to keep 
+
+
+# --- drawing stack ---------------------------------
+supervision==0.18.0      # Roboflow’s annotation helper
+opencv-python==4.10.0.84 # opencv
+
+# --- development dependencies ---------------------------------
+pytest==8.2.0           # unit tests
+httpx==0.27.0           # async test client for FastAPI
+black==24.4.2           # formatter
+isort==5.13.2           # import sorter
+mypy==1.10.0            # static typing
