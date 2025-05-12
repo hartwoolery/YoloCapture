@@ -11,11 +11,13 @@ Use the YoloCapture.ts script in Lens Studio
 
 https://your-tunnel.com/upload 
 POST with:\
-```{
+```
+{
 "dataset": [string],
 "image_b64": [base64 image],
 "label": [YoloV7 string]
-}```
+}
+```
 
 Visualize a random image in your dataset:\
 https://your-tunnel.com/dataset/[name]/preview
